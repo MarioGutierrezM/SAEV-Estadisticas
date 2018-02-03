@@ -1,0 +1,40 @@
+<div class="row">
+  <div class="col-lg-12">
+    <h1 class="page-header">Torneos Registrados</h1>
+  </div>
+  <!-- /.col-lg-12 -->
+</div>
+<!-- /.row -->
+
+<div class="row">
+  <div class="col-lg-12">
+    <div class="panel panel-info">
+      <div class="panel-heading">
+          <i class="fa fa-info-circle" aria-hidden="true"></i> Lista de Torneos
+      </div>
+      <!-- /.panel-heading -->
+      <div class="panel-body">
+        <div class="col-md-12">
+          <div class="list-group">
+
+            <a [routerLink]="['/torneo', torneo.id]" class="list-group-item" *ngFor="let torneo of photos">
+              <i class="fa fa-trophy" aria-hidden="true"></i> Nombre:
+              <span class="text-muted ">{{torneo.nombre}}
+              </span>
+            </a>
+            
+          </div>
+          <!-- /.list-group -->
+        </div>
+        <!-- /.col-md-6 -->        
+      </div>
+      <!-- /.panel-body -->
+    </div>
+    <!-- /.panel -->
+  </div>
+  <!-- /.col-lg-4 -->
+</div>
+<!-- /.row -->
+
+
+
